@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AFQuarkApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAc-2P-RYi">
+                                <rect key="frame" x="131.5" y="68" width="57" height="30"/>
+                                <state key="normal" title="alert OK"/>
+                                <connections>
+                                    <action selector="alertOk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bIb-vo-C56"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eb-d0-8Nk">
+                                <rect key="frame" x="106" y="114" width="108" height="30"/>
+                                <state key="normal" title="alert OK/Cancel"/>
+                                <connections>
+                                    <action selector="alertOkCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJb-mD-RHg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfK-Ay-YCp">
+                                <rect key="frame" x="113" y="160" width="94" height="30"/>
+                                <state key="normal" title="Alart as Toast"/>
+                                <connections>
+                                    <action selector="alertToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LlA-dr-r3X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDV-Rf-S2H">
+                                <rect key="frame" x="114" y="206" width="92" height="30"/>
+                                <state key="normal" title="Alert multiple"/>
+                                <connections>
+                                    <action selector="alertMultiple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cvu-vf-dDf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNg-Gj-gbu">
+                                <rect key="frame" x="92" y="252" width="136" height="30"/>
+                                <state key="normal" title="Alert Sheet Multiple"/>
+                                <connections>
+                                    <action selector="alertSheetMultiple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yj7-dE-d7I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gfK-Ay-YCp" firstAttribute="top" secondItem="8eb-d0-8Nk" secondAttribute="bottom" constant="16" id="1vO-xF-e8Q"/>
+                            <constraint firstItem="WAc-2P-RYi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J28-pO-W24"/>
+                            <constraint firstItem="gfK-Ay-YCp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LbN-OH-9wY"/>
+                            <constraint firstItem="WAc-2P-RYi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="dyW-6R-aCi"/>
+                            <constraint firstItem="nDV-Rf-S2H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iQY-Ux-Vmj"/>
+                            <constraint firstItem="QNg-Gj-gbu" firstAttribute="top" secondItem="nDV-Rf-S2H" secondAttribute="bottom" constant="16" id="kdq-aw-oWj"/>
+                            <constraint firstItem="8eb-d0-8Nk" firstAttribute="top" secondItem="WAc-2P-RYi" secondAttribute="bottom" constant="16" id="l8c-jq-vUm"/>
+                            <constraint firstItem="QNg-Gj-gbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vUj-Th-wKR"/>
+                            <constraint firstItem="8eb-d0-8Nk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wxY-9A-LTs"/>
+                            <constraint firstItem="nDV-Rf-S2H" firstAttribute="top" secondItem="gfK-Ay-YCp" secondAttribute="bottom" constant="16" id="zqC-Jc-dUP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
