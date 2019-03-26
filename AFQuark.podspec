@@ -9,7 +9,7 @@ s.source = { :git => 'https://github.com/laurent68k/AFQuark.git', :tag => s.vers
 s.requires_arc = true
 s.ios.deployment_target = '9.0'
 s.tvos.deployment_target = '9.0'
-s.source_files = 'AFQuark/**/*.swift'
+s.source_files = 'AFQuark/AFQuark/*.swift'
 s.ios.resources = ['AFQuark/**/*.xib']
 s.tvos.resources = ['AFQuark/**/*.xcassets']
 end
