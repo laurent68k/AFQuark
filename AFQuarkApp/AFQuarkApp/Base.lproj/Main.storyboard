@@ -59,6 +59,11 @@
                                     <constraint firstAttribute="height" constant="44" id="J9m-ry-9U2"/>
                                 </constraints>
                                 <items>
+                                    <barButtonItem systemItem="action" id="x4s-8V-oa5">
+                                        <connections>
+                                            <action selector="shareAction:" destination="BYZ-38-t0r" id="WZY-YD-ypX"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="vJU-DT-zvb"/>
                                     <barButtonItem title="Sheet" id="mtp-sN-DxM">
                                         <connections>
@@ -66,6 +71,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="DWk-MB-ioc"/>
+                                    <barButtonItem systemItem="camera" id="zeG-9d-ybg">
+                                        <connections>
+                                            <action selector="cameraShoot:" destination="BYZ-38-t0r" id="baa-6J-2vL"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>

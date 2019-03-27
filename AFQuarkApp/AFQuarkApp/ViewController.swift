@@ -52,6 +52,8 @@ class ViewController: UIViewController {
         actions.append( UIAlertAction(title: "Button 2", style: .default, handler: { _ in print("Button 2 pressed")}))
         actions.append( UIAlertAction(title: "Button 3", style: .default, handler: { _ in print("Button 3 pressed")}))
         
+        actions.append( UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in print("Button 3 pressed")}))
+        
         AFAlert.alert(self, title: "Quark", message: "Alert with multiple buttons", withActions: actions)
     }
     
@@ -62,6 +64,8 @@ class ViewController: UIViewController {
         actions.append( UIAlertAction(title: "Button 1", style: .default, handler: { _ in print("Button 1 pressed")}))
         actions.append( UIAlertAction(title: "Button 2", style: .default, handler: { _ in print("Button 2 pressed")}))
         actions.append( UIAlertAction(title: "Button 3", style: .default, handler: { _ in print("Button 3 pressed")}))
+        
+        actions.append( UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in print("Button 3 pressed")}))
         
         AFAlert.alertSheet(self, title: "Quark", message: "Alert Sheet with multiple buttons", forButton: sender, withActions: actions)
     }
@@ -74,7 +78,27 @@ class ViewController: UIViewController {
         actions.append( UIAlertAction(title: "Button 2", style: .default, handler: { _ in print("Button 2 pressed")}))
         actions.append( UIAlertAction(title: "Button 3", style: .default, handler: { _ in print("Button 3 pressed")}))
         
+        actions.append( UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in print("Button 3 pressed")}))
+
         AFAlert.alertSheet(self, title: "Quark", message: "Alert Sheet with multiple buttons", forButton: sender, withActions: actions)
     }
+    
+    @IBAction func cameraShoot(_ sender: Any) {
+        
+        AFCamera.shoot(self)
+    }
+    
+    @IBAction func shareAction(_ sender: Any) {
+        
+        var images: [UIImage] = []
+        
+        if let image = UIImage(named: "photo") {
+            
+            images.append(image)
+        }
+        
+        AFCamera.shareImages(self, anchorObject: sender, images: images)
+    }
+
 }
 

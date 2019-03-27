@@ -10,7 +10,7 @@
    </Group>
    <Group
       location = "container:"
-      name = "Pod">
+      name = "Framework">
       <FileRef
          location = "group:AFQuark.podspec">
       </FileRef>

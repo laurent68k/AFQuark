@@ -73,7 +73,7 @@ open class AFCamera {
         }
     }
 
-    open class func shareImages(_ viewController: UIViewController, _ anchorObject: AnyObject, images: [UIImage]) {
+    open class func shareImages(_ viewController: UIViewController, anchorObject: Any, images: [UIImage]) {
 
         var imagesData : [Any] = []
         
