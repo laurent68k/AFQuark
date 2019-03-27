@@ -1,7 +1,7 @@
 ## Introduction
 AFQuark is my first framework available online as a pod with Cocoapod. The goal is to have some nice to have piece of code to help quickly to develop an iOS App.
 
-Currently in dev, don't use it as a Pod.
+Currently in dev, don't use it as a pod. It's my playground zone.
 
 ## Swift 4.2
 Requires Xcode 10 and Swift 4.2.
