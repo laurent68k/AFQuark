@@ -65,5 +65,16 @@ class ViewController: UIViewController {
         
         AFAlert.alertSheet(self, title: "Quark", message: "Alert Sheet with multiple buttons", forButton: sender, withActions: actions)
     }
+    
+    @IBAction func toolBarItem(_ sender: Any) {
+        
+        var actions: [UIAlertAction] = []
+        
+        actions.append( UIAlertAction(title: "Button 1", style: .default, handler: { _ in print("Button 1 pressed")}))
+        actions.append( UIAlertAction(title: "Button 2", style: .default, handler: { _ in print("Button 2 pressed")}))
+        actions.append( UIAlertAction(title: "Button 3", style: .default, handler: { _ in print("Button 3 pressed")}))
+        
+        AFAlert.alertSheet(self, title: "Quark", message: "Alert Sheet with multiple buttons", forButton: sender, withActions: actions)
+    }
 }
 

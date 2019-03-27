@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D3741D1224AB88100FBCD0D /* AFQuark.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3741CF224AB88100FBCD0D /* AFQuark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3741D7224AB91700FBCD0D /* AFALert.swift */; };
+		4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E07EA224C12690086B5A4 /* AFCamera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		4D3741CF224AB88100FBCD0D /* AFQuark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFQuark.h; sourceTree = "<group>"; };
 		4D3741D0224AB88100FBCD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3741D7224AB91700FBCD0D /* AFALert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFALert.swift; sourceTree = "<group>"; };
+		4D4E07EA224C12690086B5A4 /* AFCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFCamera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +50,20 @@
 		4D3741CE224AB88100FBCD0D /* AFQuark */ = {
 			isa = PBXGroup;
 			children = (
+				4D4E07E9224C125D0086B5A4 /* Camera */,
 				4D3741D7224AB91700FBCD0D /* AFALert.swift */,
 				4D3741CF224AB88100FBCD0D /* AFQuark.h */,
 				4D3741D0224AB88100FBCD0D /* Info.plist */,
 			);
 			path = AFQuark;
+			sourceTree = "<group>";
+		};
+		4D4E07E9224C125D0086B5A4 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				4D4E07EA224C12690086B5A4 /* AFCamera.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */,
+				4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
