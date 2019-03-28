@@ -3,13 +3,6 @@
    version = "1.0">
    <Group
       location = "container:"
-      name = "TestApp">
-      <FileRef
-         location = "group:AFQuarkApp/AFQuarkApp.xcodeproj">
-      </FileRef>
-   </Group>
-   <Group
-      location = "container:"
       name = "Framework">
       <FileRef
          location = "group:AFQuark.podspec">
