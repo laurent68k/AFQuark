@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0FFFE3224D38F700384DA1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE2224D38F700384DA1 /* UIColor.swift */; };
+		4D0FFFE5224D393900384DA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE4224D393900384DA1 /* String.swift */; };
+		4D0FFFE7224D39FF00384DA1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE6224D39FF00384DA1 /* Date.swift */; };
+		4D0FFFE9224D3A2B00384DA1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE8224D3A2B00384DA1 /* UIImage.swift */; };
 		4D3741D1224AB88100FBCD0D /* AFQuark.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3741CF224AB88100FBCD0D /* AFQuark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3741D7224AB91700FBCD0D /* AFALert.swift */; };
 		4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E07EA224C12690086B5A4 /* AFCamera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0FFFE2224D38F700384DA1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4D0FFFE4224D393900384DA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4D0FFFE6224D39FF00384DA1 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		4D0FFFE8224D3A2B00384DA1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		4D3741CC224AB88100FBCD0D /* AFQuark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFQuark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3741CF224AB88100FBCD0D /* AFQuark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFQuark.h; sourceTree = "<group>"; };
 		4D3741D0224AB88100FBCD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +39,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D0FFFE1224D38BC00384DA1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FFFE2224D38F700384DA1 /* UIColor.swift */,
+				4D0FFFE4224D393900384DA1 /* String.swift */,
+				4D0FFFE6224D39FF00384DA1 /* Date.swift */,
+				4D0FFFE8224D3A2B00384DA1 /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4D3741C2224AB88100FBCD0D = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +69,7 @@
 		4D3741CE224AB88100FBCD0D /* AFQuark */ = {
 			isa = PBXGroup;
 			children = (
+				4D0FFFE1224D38BC00384DA1 /* Extensions */,
 				4D4E07E9224C125D0086B5A4 /* Camera */,
 				4D3741D7224AB91700FBCD0D /* AFALert.swift */,
 				4D3741CF224AB88100FBCD0D /* AFQuark.h */,
@@ -146,6 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */,
+				4D0FFFE7224D39FF00384DA1 /* Date.swift in Sources */,
+				4D0FFFE3224D38F700384DA1 /* UIColor.swift in Sources */,
+				4D0FFFE9224D3A2B00384DA1 /* UIImage.swift in Sources */,
+				4D0FFFE5224D393900384DA1 /* String.swift in Sources */,
 				4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
