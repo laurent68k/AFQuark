@@ -14,6 +14,8 @@
 		4D3741D1224AB88100FBCD0D /* AFQuark.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3741CF224AB88100FBCD0D /* AFQuark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3741D7224AB91700FBCD0D /* AFALert.swift */; };
 		4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E07EA224C12690086B5A4 /* AFCamera.swift */; };
+		4D52FFA5224E957700AE738F /* AFPdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52FFA3224E957700AE738F /* AFPdf.swift */; };
+		4D52FFA6224E957700AE738F /* AFCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52FFA4224E957700AE738F /* AFCloud.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4D3741D0224AB88100FBCD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3741D7224AB91700FBCD0D /* AFALert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFALert.swift; sourceTree = "<group>"; };
 		4D4E07EA224C12690086B5A4 /* AFCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFCamera.swift; sourceTree = "<group>"; };
+		4D52FFA3224E957700AE738F /* AFPdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFPdf.swift; sourceTree = "<group>"; };
+		4D52FFA4224E957700AE738F /* AFCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFCloud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		4D4E07E9224C125D0086B5A4 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				4D52FFA4224E957700AE738F /* AFCloud.swift */,
+				4D52FFA3224E957700AE738F /* AFPdf.swift */,
 				4D4E07EA224C12690086B5A4 /* AFCamera.swift */,
 			);
 			path = Camera;
@@ -169,7 +175,9 @@
 				4D0FFFE7224D39FF00384DA1 /* Date.swift in Sources */,
 				4D0FFFE3224D38F700384DA1 /* UIColor.swift in Sources */,
 				4D0FFFE9224D3A2B00384DA1 /* UIImage.swift in Sources */,
+				4D52FFA5224E957700AE738F /* AFPdf.swift in Sources */,
 				4D0FFFE5224D393900384DA1 /* String.swift in Sources */,
+				4D52FFA6224E957700AE738F /* AFCloud.swift in Sources */,
 				4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
