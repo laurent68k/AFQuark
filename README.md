@@ -18,34 +18,33 @@ pod 'AFQuark', :git => 'https://github.com/laurent68k/AFQuark.git'
 
 ## FAAlert Class
 
-func okCancelAlert(_ viewController: UIViewController, title: String, message: String,
-                                                okHandler: (() -> Void )? = nil, cancelHandler: (() -> Void )? = nil )
+**func okCancelAlert(_ viewController: UIViewController, title: String, message: String, okHandler: (() -> Void )? = nil, cancelHandler: (() -> Void )? = nil )
                                           
-func okAlert(_ viewController: UIViewController, title: String, message: String, completionHandler: (() -> Void)? = nil)
+**func okAlert(_ viewController: UIViewController, title: String, message: String, completionHandler: (() -> Void)? = nil)
 
-func toast(_ viewController: UIViewController, title: String, message: String, delaySeconds: Double = 1.0, completionHandler: (() -> Void )? = nil)
+**func toast(_ viewController: UIViewController, title: String, message: String, delaySeconds: Double = 1.0, completionHandler: (() -> Void )? = nil)
 
-func alert(_ viewController: UIViewController, title: String, message: String, withActions actions: [UIAlertAction]?)
+**func alert(_ viewController: UIViewController, title: String, message: String, withActions actions: [UIAlertAction]?)
 
-func alertSheet(_ viewController: UIViewController, title: String, message: String, forButton anchorObject: Any, withActions actions: [UIAlertAction])
+**func alertSheet(_ viewController: UIViewController, title: String, message: String, forButton anchorObject: Any, withActions actions: [UIAlertAction])
 
 
 ## AFCamera Class (iOS only)
 
-func shoot(_ viewController: UIViewController)
+**func shoot(_ viewController: UIViewController)
 
-func shareImages(_ viewController: UIViewController, anchorObject: Any, images: [UIImage])
+**func shareImages(_ viewController: UIViewController, anchorObject: Any, images: [UIImage])
 
 
 ## Extensions
 
-- Date
+- **Date
 
-- String
+- **String
 
-- UIColor
+- **UIColor
 
-- UIImage
+- **UIImage
 
 ## Known issue
 - None
