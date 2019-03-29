@@ -76,6 +76,8 @@
 				4D0FFFE1224D38BC00384DA1 /* Extensions */,
 				4D4E07E9224C125D0086B5A4 /* Camera */,
 				4D3741D7224AB91700FBCD0D /* AFALert.swift */,
+				4D52FFA4224E957700AE738F /* AFCloud.swift */,
+				4D52FFA3224E957700AE738F /* AFPdf.swift */,
 				4D3741CF224AB88100FBCD0D /* AFQuark.h */,
 				4D3741D0224AB88100FBCD0D /* Info.plist */,
 			);
@@ -85,8 +87,6 @@
 		4D4E07E9224C125D0086B5A4 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				4D52FFA4224E957700AE738F /* AFCloud.swift */,
-				4D52FFA3224E957700AE738F /* AFPdf.swift */,
 				4D4E07EA224C12690086B5A4 /* AFCamera.swift */,
 			);
 			path = Camera;

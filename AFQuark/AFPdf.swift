@@ -23,7 +23,7 @@ class AFPdf {
     //--------------------------------------------------------------------------------------------------------------
 
     /**
-        Return a URL to the PDF document which contains the visit desscription
+     Build from the formatter and return an URL to the PDF document
      */
     class func create(named fileName:String, from formatter: UIViewPrintFormatter) -> URL? {
         
