@@ -12,13 +12,13 @@ open class AFiCloud {
     
     //--------------------------------------------------------------------------------------------------------------
     
-    static let shared = AFiCloud()
+    public static let shared = AFiCloud()
     
     //--------------------------------------------------------------------------------------------------------------
     /**
      Cloud folder to use inside the shared cloud folder Application
      */
-    static var cloudFolder : String {
+    public static var cloudFolder : String {
         
         return UIDevice.current.name
     }

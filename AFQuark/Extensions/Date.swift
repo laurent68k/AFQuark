@@ -14,7 +14,7 @@ public extension Date {
      Format and return the self date and time: 28 March 2019 at 19:08
      
      */
-    public var asDateTimeLocalized : String {
+    var asDateTimeLocalized : String {
         
         //  Format the ouput now with a specific formatter regarding the current localization
         let dateOutputFormatter  = DateFormatter()
@@ -32,7 +32,7 @@ public extension Date {
      Format and return the self date only: 28 March 2019
      
      */
-    public var asDateLocalized : String {
+    var asDateLocalized : String {
         
         //  Format the ouput now with a specific formatter regarding the current localization
         let dateOutputFormatter  = DateFormatter()
@@ -49,7 +49,7 @@ public extension Date {
     /**
      Format self as localized short date and time: 28/03/2019 19:08
      */
-    public var asShortDateTimeLocalized : String {
+    var asShortDateTimeLocalized : String {
         
         //  Format the ouput now with a specific formatter regarding the current localization
         let dateOutputFormatter  = DateFormatter()
@@ -66,7 +66,7 @@ public extension Date {
     /**
      Format self as localized long date and time: Thursday 28 March 2019 at 19:08
      */
-    public var asLongDateTimeLocalized: String {
+    var asLongDateTimeLocalized: String {
         
         // get the current date and time
         let currentDateTime = Date()

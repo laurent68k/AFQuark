@@ -13,7 +13,7 @@ import UIKit
 
 public extension UIImage {
     
-    public class func resize(image: UIImage, targetSize: CGSize) -> UIImage {
+    class func resize(image: UIImage, targetSize: CGSize) -> UIImage {
         
         let size = image.size
         

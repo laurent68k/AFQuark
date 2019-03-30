@@ -108,6 +108,5 @@ open class AFCamera {
             viewController.present(activityController, animated: true, completion: nil)
         }
     }
-
 }
 #endif

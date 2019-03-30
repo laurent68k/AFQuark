@@ -17,7 +17,7 @@ public extension String {
     /**
      Return the translated string if any
      */
-    public var asLocalizable : String {
+    var asLocalizable : String {
         
         return NSLocalizedString( self, comment:"")
     }
@@ -25,7 +25,7 @@ public extension String {
     /**
      Convert in Date the UTC date string representation
      */
-    public var asDateTime : Date? {
+    var asDateTime : Date? {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = String.utcDateTimeFormat     //"yyyy-MM-dd'T'HH:mm:ssZZZZZ"
@@ -34,7 +34,7 @@ public extension String {
         return dateFormatter.date(from: self )
     }
     
-    public var fromNumberLocalToInteger : Int? {
+    var fromNumberLocalToInteger : Int? {
         
         let formatter = NumberFormatter()
         
@@ -48,7 +48,7 @@ public extension String {
         
     }
     
-   public var fromNumberLocalToDouble : Double? {
+   var fromNumberLocalToDouble : Double? {
         
         let formatter = NumberFormatter()
         
