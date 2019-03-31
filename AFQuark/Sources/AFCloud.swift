@@ -1,5 +1,5 @@
 //
-//  ICloud
+//  AFiCloud
 //  My external Pod project
 //
 //  Created by Laurent Favard on 26/03/2019

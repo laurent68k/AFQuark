@@ -11,6 +11,7 @@
 		4D0FFFE5224D393900384DA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE4224D393900384DA1 /* String.swift */; };
 		4D0FFFE7224D39FF00384DA1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE6224D39FF00384DA1 /* Date.swift */; };
 		4D0FFFE9224D3A2B00384DA1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE8224D3A2B00384DA1 /* UIImage.swift */; };
+		4D18C4A22250C3B50054495C /* AFShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18C4A12250C3B50054495C /* AFShare.swift */; };
 		4D3741D1224AB88100FBCD0D /* AFQuark.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3741CF224AB88100FBCD0D /* AFQuark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3741D7224AB91700FBCD0D /* AFALert.swift */; };
 		4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E07EA224C12690086B5A4 /* AFCamera.swift */; };
@@ -23,6 +24,7 @@
 		4D0FFFE4224D393900384DA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		4D0FFFE6224D39FF00384DA1 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		4D0FFFE8224D3A2B00384DA1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		4D18C4A12250C3B50054495C /* AFShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFShare.swift; sourceTree = "<group>"; };
 		4D3741CC224AB88100FBCD0D /* AFQuark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFQuark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3741CF224AB88100FBCD0D /* AFQuark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFQuark.h; sourceTree = "<group>"; };
 		4D3741D0224AB88100FBCD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +56,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4D18C4A32250CC700054495C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4D0FFFE1224D38BC00384DA1 /* Extensions */,
+				4D4E07E9224C125D0086B5A4 /* Camera */,
+				4D3741D7224AB91700FBCD0D /* AFALert.swift */,
+				4D52FFA4224E957700AE738F /* AFCloud.swift */,
+				4D52FFA3224E957700AE738F /* AFPdf.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		4D3741C2224AB88100FBCD0D = {
 			isa = PBXGroup;
 			children = (
@@ -73,11 +87,7 @@
 		4D3741CE224AB88100FBCD0D /* AFQuark */ = {
 			isa = PBXGroup;
 			children = (
-				4D0FFFE1224D38BC00384DA1 /* Extensions */,
-				4D4E07E9224C125D0086B5A4 /* Camera */,
-				4D3741D7224AB91700FBCD0D /* AFALert.swift */,
-				4D52FFA4224E957700AE738F /* AFCloud.swift */,
-				4D52FFA3224E957700AE738F /* AFPdf.swift */,
+				4D18C4A32250CC700054495C /* Sources */,
 				4D3741CF224AB88100FBCD0D /* AFQuark.h */,
 				4D3741D0224AB88100FBCD0D /* Info.plist */,
 			);
@@ -87,6 +97,7 @@
 		4D4E07E9224C125D0086B5A4 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				4D18C4A12250C3B50054495C /* AFShare.swift */,
 				4D4E07EA224C12690086B5A4 /* AFCamera.swift */,
 			);
 			path = Camera;
@@ -178,6 +189,7 @@
 				4D52FFA5224E957700AE738F /* AFPdf.swift in Sources */,
 				4D0FFFE5224D393900384DA1 /* String.swift in Sources */,
 				4D52FFA6224E957700AE738F /* AFCloud.swift in Sources */,
+				4D18C4A22250C3B50054495C /* AFShare.swift in Sources */,
 				4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
