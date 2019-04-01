@@ -12,6 +12,12 @@
 		4D0FFFE7224D39FF00384DA1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE6224D39FF00384DA1 /* Date.swift */; };
 		4D0FFFE9224D3A2B00384DA1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE8224D3A2B00384DA1 /* UIImage.swift */; };
 		4D18C4A22250C3B50054495C /* AFShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18C4A12250C3B50054495C /* AFShare.swift */; };
+		4D34D2E9225288E0001D4601 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2E7225288E0001D4601 /* Stack.swift */; };
+		4D34D2EA225288E0001D4601 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2E8225288E0001D4601 /* Queue.swift */; };
+		4D34D2F2225288FA001D4601 /* AFQuarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2F1225288FA001D4601 /* AFQuarkTests.swift */; };
+		4D34D2F4225288FA001D4601 /* AFQuark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3741CC224AB88100FBCD0D /* AFQuark.framework */; };
+		4D34D2FC2252890C001D4601 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2FA2252890C001D4601 /* QueueTests.swift */; };
+		4D34D2FD2252890C001D4601 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2FB2252890C001D4601 /* StackTests.swift */; };
 		4D3741D1224AB88100FBCD0D /* AFQuark.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3741CF224AB88100FBCD0D /* AFQuark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3741D7224AB91700FBCD0D /* AFALert.swift */; };
 		4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E07EA224C12690086B5A4 /* AFCamera.swift */; };
@@ -19,12 +25,29 @@
 		4D52FFA6224E957700AE738F /* AFCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52FFA4224E957700AE738F /* AFCloud.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4D34D2F5225288FA001D4601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D3741C3224AB88100FBCD0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D3741CB224AB88100FBCD0D;
+			remoteInfo = AFQuark;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4D0FFFE2224D38F700384DA1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4D0FFFE4224D393900384DA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		4D0FFFE6224D39FF00384DA1 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		4D0FFFE8224D3A2B00384DA1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		4D18C4A12250C3B50054495C /* AFShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFShare.swift; sourceTree = "<group>"; };
+		4D34D2E7225288E0001D4601 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		4D34D2E8225288E0001D4601 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		4D34D2EF225288FA001D4601 /* AFQuarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFQuarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D34D2F1225288FA001D4601 /* AFQuarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFQuarkTests.swift; sourceTree = "<group>"; };
+		4D34D2F3225288FA001D4601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D34D2FA2252890C001D4601 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
+		4D34D2FB2252890C001D4601 /* StackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 		4D3741CC224AB88100FBCD0D /* AFQuark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFQuark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3741CF224AB88100FBCD0D /* AFQuark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFQuark.h; sourceTree = "<group>"; };
 		4D3741D0224AB88100FBCD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +58,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D34D2EC225288FA001D4601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D34D2F4225288FA001D4601 /* AFQuark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D3741C9224AB88100FBCD0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +90,7 @@
 		4D18C4A32250CC700054495C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4D34D2E6225288C7001D4601 /* DataStructures */,
 				4D0FFFE1224D38BC00384DA1 /* Extensions */,
 				4D4E07E9224C125D0086B5A4 /* Camera */,
 				4D3741D7224AB91700FBCD0D /* AFALert.swift */,
@@ -68,10 +100,31 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		4D34D2E6225288C7001D4601 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				4D34D2E8225288E0001D4601 /* Queue.swift */,
+				4D34D2E7225288E0001D4601 /* Stack.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		4D34D2F0225288FA001D4601 /* AFQuarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D34D2FA2252890C001D4601 /* QueueTests.swift */,
+				4D34D2FB2252890C001D4601 /* StackTests.swift */,
+				4D34D2F1225288FA001D4601 /* AFQuarkTests.swift */,
+				4D34D2F3225288FA001D4601 /* Info.plist */,
+			);
+			path = AFQuarkTests;
+			sourceTree = "<group>";
+		};
 		4D3741C2224AB88100FBCD0D = {
 			isa = PBXGroup;
 			children = (
 				4D3741CE224AB88100FBCD0D /* AFQuark */,
+				4D34D2F0225288FA001D4601 /* AFQuarkTests */,
 				4D3741CD224AB88100FBCD0D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				4D3741CC224AB88100FBCD0D /* AFQuark.framework */,
+				4D34D2EF225288FA001D4601 /* AFQuarkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +171,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4D34D2EE225288FA001D4601 /* AFQuarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D34D2F7225288FA001D4601 /* Build configuration list for PBXNativeTarget "AFQuarkTests" */;
+			buildPhases = (
+				4D34D2EB225288FA001D4601 /* Sources */,
+				4D34D2EC225288FA001D4601 /* Frameworks */,
+				4D34D2ED225288FA001D4601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D34D2F6225288FA001D4601 /* PBXTargetDependency */,
+			);
+			name = AFQuarkTests;
+			productName = AFQuarkTests;
+			productReference = 4D34D2EF225288FA001D4601 /* AFQuarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4D3741CB224AB88100FBCD0D /* AFQuark */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D3741D4224AB88100FBCD0D /* Build configuration list for PBXNativeTarget "AFQuark" */;
@@ -141,9 +213,13 @@
 		4D3741C3224AB88100FBCD0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Laurent Favard";
 				TargetAttributes = {
+					4D34D2EE225288FA001D4601 = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					4D3741CB224AB88100FBCD0D = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -163,11 +239,19 @@
 			projectRoot = "";
 			targets = (
 				4D3741CB224AB88100FBCD0D /* AFQuark */,
+				4D34D2EE225288FA001D4601 /* AFQuarkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D34D2ED225288FA001D4601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D3741CA224AB88100FBCD0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,6 +262,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D34D2EB225288FA001D4601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D34D2F2225288FA001D4601 /* AFQuarkTests.swift in Sources */,
+				4D34D2FC2252890C001D4601 /* QueueTests.swift in Sources */,
+				4D34D2FD2252890C001D4601 /* StackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D3741C8224AB88100FBCD0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,9 +279,11 @@
 				4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */,
 				4D0FFFE7224D39FF00384DA1 /* Date.swift in Sources */,
 				4D0FFFE3224D38F700384DA1 /* UIColor.swift in Sources */,
+				4D34D2EA225288E0001D4601 /* Queue.swift in Sources */,
 				4D0FFFE9224D3A2B00384DA1 /* UIImage.swift in Sources */,
 				4D52FFA5224E957700AE738F /* AFPdf.swift in Sources */,
 				4D0FFFE5224D393900384DA1 /* String.swift in Sources */,
+				4D34D2E9225288E0001D4601 /* Stack.swift in Sources */,
 				4D52FFA6224E957700AE738F /* AFCloud.swift in Sources */,
 				4D18C4A22250C3B50054495C /* AFShare.swift in Sources */,
 				4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */,
@@ -196,7 +292,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4D34D2F6225288FA001D4601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D3741CB224AB88100FBCD0D /* AFQuark */;
+			targetProxy = 4D34D2F5225288FA001D4601 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4D34D2F8225288FA001D4601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T32WF6U53;
+				INFOPLIST_FILE = AFQuarkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent68k.ios.AFQuarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D34D2F9225288FA001D4601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2T32WF6U53;
+				INFOPLIST_FILE = AFQuarkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent68k.ios.AFQuarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4D3741D2224AB88100FBCD0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -375,6 +517,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D34D2F7225288FA001D4601 /* Build configuration list for PBXNativeTarget "AFQuarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D34D2F8225288FA001D4601 /* Debug */,
+				4D34D2F9225288FA001D4601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4D3741C6224AB88100FBCD0D /* Build configuration list for PBXProject "AFQuark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
