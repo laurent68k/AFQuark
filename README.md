@@ -23,23 +23,21 @@ $ pod install
 
 ## FAAlert Class
 
-`func okCancelAlert(_ viewController: UIViewController, title: String, message: String, okHandler: (() -> Void )? = nil, cancelHandler: (() -> Void )? = nil )`
-                                          
-`func okAlert(_ viewController: UIViewController, title: String, message: String, completionHandler: (() -> Void)? = nil)`
-
-`func toast(_ viewController: UIViewController, title: String, message: String, delaySeconds: Double = 1.0, completionHandler: (() -> Void )? = nil)`
-
-`func alert(_ viewController: UIViewController, title: String, message: String, withActions actions: [UIAlertAction]?)`
-
-`func alertSheet(_ viewController: UIViewController, title: String, message: String, forButton anchorObject: Any, withActions actions: [UIAlertAction])`
-
+`Several way to open and show an alert box or as a sheet.`
 
 ## AFCamera Class (iOS only)
 
-`func shoot(_ viewController: UIViewController)`
+`Class to capture an image with the camera`
 
-`func shareImages(_ viewController: UIViewController, anchorObject: Any, images: [UIImage])`
+## AFiCloud Class
 
+`Class to share documents to iCloud drive`
+
+## AFPdf Class
+
+## AFQueue
+
+## AFStack
 
 ## Extensions
 
