@@ -24,7 +24,7 @@ class StackTests: XCTestCase {
 
     func test001() {
 
-        let stack : Stack = Stack<String>()
+        let stack : AFStack = AFStack<String>()
         
         for i in 1...100 {
             
@@ -35,7 +35,7 @@ class StackTests: XCTestCase {
     
     func test002() {
         
-        let stack : Stack = Stack<String>()
+        let stack : AFStack = AFStack<String>()
         
         stack.push("Car")
         XCTAssert(stack.size == 1, "test002 failed: Expected 1 element in the stack" )
@@ -74,13 +74,13 @@ class StackTests: XCTestCase {
 
     func test003() {
         
-        let stack : Stack = Stack<String>()
+        let stack : AFStack = AFStack<String>()
         
         do {
             _ = try stack.pop()
             XCTAssert(false, "test003 failed: Expected 'StackError.Empty' exceptton from the stack" )
         }
-        catch StackError.Empty {
+        catch AFStackError.Empty {
             
         }
         catch {
@@ -91,7 +91,7 @@ class StackTests: XCTestCase {
     func test004() {
 
         let values = [ "Car", "Motorbike", "Bike" ]
-        let stack : Stack = Stack<String>()
+        let stack : AFStack = AFStack<String>()
         
         for value in values {
             
@@ -111,7 +111,7 @@ class StackTests: XCTestCase {
     func test005() {
         
         let values = [ "Car", "Motorbike", "Bike" ]
-        let stack : Stack = Stack<String>()
+        let stack : AFStack = AFStack<String>()
         
         for value in values {
             
@@ -134,7 +134,7 @@ class StackTests: XCTestCase {
     
     func test009() {
         
-        let stack : Stack = Stack<String>()
+        let stack : AFStack = AFStack<String>()
         
         stack.push("Car")
         stack.push("Motorbike")
@@ -147,20 +147,22 @@ class StackTests: XCTestCase {
     func test010() {
         
         let values = [ "Car", "Motorbike", "Bike" ]
-        let queue : Queue = Queue<String>()
+        let stack : AFStack = AFStack<String>()
         
         for value in values {
             
-            queue.enqueue(value)
+            stack.push(value)
         }
         
+        var decrement = values.count - 1
         var increment = 0
-        for value in queue.map( { $0.uppercased() } ) {
+        for value in stack.map( { $0.uppercased() } ) {
             
             print("index: \(index) value: \(value)")
             
-            XCTAssert(value == values[increment].uppercased(), "test005 failed: Value is '\(value)' Expected '\(values[increment].uppercased())' from the statck.amp()" )
+            XCTAssert(value == values[decrement].uppercased(), "test005 failed: Value is '\(value)' Expected '\(values[increment].uppercased())' from the statck.amp()" )
             
+            decrement -= 1
             increment += 1
         }
     }

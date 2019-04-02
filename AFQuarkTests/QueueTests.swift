@@ -23,7 +23,7 @@ class QueueTests: XCTestCase {
     
     func test001() {
         
-        let queue : Queue = Queue<String>()
+        let queue : AFQueue = AFQueue<String>()
         
         for i in 1...100 {
             
@@ -34,7 +34,7 @@ class QueueTests: XCTestCase {
     
     func test002() {
         
-        let queue : Queue = Queue<String>()
+        let queue : AFQueue = AFQueue<String>()
         
         queue.enqueue("Car")
         XCTAssert(queue.size == 1, "test002 failed: Expected 1 element in the queue" )
@@ -73,13 +73,13 @@ class QueueTests: XCTestCase {
     
     func test003() {
         
-        let queue : Queue = Queue<String>()
+        let queue : AFQueue = AFQueue<String>()
         
         do {
             _ = try queue.dequeue()
             XCTAssert(false, "test003 failed: Expected 'QueueError.Empty' exceptton from the queue" )
         }
-        catch QueueError.Empty {
+        catch AFQueueError.Empty {
             
         }
         catch {
@@ -90,7 +90,7 @@ class QueueTests: XCTestCase {
     func test004() {
         
         let values = [ "Car", "Motorbike", "Bike" ]
-        let queue : Queue = Queue<String>()
+        let queue : AFQueue = AFQueue<String>()
         
         for value in values {
             
@@ -110,7 +110,7 @@ class QueueTests: XCTestCase {
     func test005() {
         
         let values = [ "Car", "Motorbike", "Bike" ]
-        let queue : Queue = Queue<String>()
+        let queue : AFQueue = AFQueue<String>()
         
         for value in values {
             
@@ -133,7 +133,7 @@ class QueueTests: XCTestCase {
     
     func test009() {
         
-        let queue : Queue = Queue<String>()
+        let queue : AFQueue = AFQueue<String>()
         
         queue.enqueue("Car")
         queue.enqueue("Motorbike")
@@ -146,7 +146,7 @@ class QueueTests: XCTestCase {
     func test010() {
         
         let values = [ "Car", "Motorbike", "Bike" ]
-        let queue : Queue = Queue<String>()
+        let queue : AFQueue = AFQueue<String>()
         
         for value in values {
             

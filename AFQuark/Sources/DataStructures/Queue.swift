@@ -10,7 +10,7 @@ import Foundation
 
 /// ---------------------------------------------------------------------------------------------------------------------------------------------
 /// ---------------------------------------------------------------------------------------------------------------------------------------------
-public enum QueueError : Error {
+public enum AFQueueError : Error {
     
     case    Empty
 }
@@ -20,7 +20,7 @@ public enum QueueError : Error {
 /**
     Queue FIFO data structure 
  */
-public class Queue<Element: Equatable> : Sequence {
+public class AFQueue<Element: Equatable> : Sequence {
     
     /**
      Size of the queue
@@ -67,17 +67,23 @@ public class Queue<Element: Equatable> : Sequence {
     }
     
     public let rx = RxObservables()*/
+    public typealias ChangeHandler = ( (Int, Element?, Element?) -> Void)
     /// ---------------------------------------------------------------------------------------------------------------------------------------------
     private (set) var name : String = String.empty
     private var array = [Element]()
+    private var changeHandler: ChangeHandler? = nil
     /// ---------------------------------------------------------------------------------------------------------------------------------------------
-    public init() {
+    public init( changeHandler: ChangeHandler? = nil) {
         
+        self.changeHandler = changeHandler
     }
-    public init(withName name:String) {
+    
+    convenience init(withName name:String, changeHandler: ChangeHandler? = nil) {
         
+        self.init(changeHandler: changeHandler)
         self.name = name
     }
+    
     /// ---------------------------------------------------------------------------------------------------------------------------------------------
     deinit {
         
@@ -92,9 +98,7 @@ public class Queue<Element: Equatable> : Sequence {
         
         self.array.append(value)
         
-//        self.size.value = self.array.count
-//        self.headItem.value = self.array.last
-//        self.tailItem.value = self.array.first
+        self.changeHandler?(self.array.count, self.array.last, self.array.first)
     }
     /// ---------------------------------------------------------------------------------------------------------------------------------------------
     
@@ -107,13 +111,11 @@ public class Queue<Element: Equatable> : Sequence {
             
             let element = self.array.removeFirst()
             
-//            self.size.value = self.array.count
-//            self.headItem.value = self.array.last
-//            self.tailItem.value = self.array.first
+            self.changeHandler?(self.array.count, self.array.last, self.array.first)
             
             return element
         }
-        throw StackError.Empty
+        throw AFStackError.Empty
     }
     /// ---------------------------------------------------------------------------------------------------------------------------------------------
     

@@ -10,7 +10,7 @@ import Foundation
 
 /// ---------------------------------------------------------------------------------------------------------------------------------------------
 /// ---------------------------------------------------------------------------------------------------------------------------------------------
-public enum StackError : Error {
+public enum AFStackError : Error {
 
     case    Empty
 }
@@ -20,7 +20,7 @@ public enum StackError : Error {
 /**
  Stack LIFO data structure
  */
-public class Stack<Element: Equatable> : Sequence {
+public class AFStack<Element: Equatable> : Sequence {
     
    /**
         Size of the Stack
@@ -112,7 +112,7 @@ public class Stack<Element: Equatable> : Sequence {
             
             return element
         }
-        throw StackError.Empty
+        throw AFStackError.Empty
     }
     /// ---------------------------------------------------------------------------------------------------------------------------------------------
     
