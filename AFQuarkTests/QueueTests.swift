@@ -156,8 +156,6 @@ class QueueTests: XCTestCase {
         var increment = 0
         for value in queue.map( { $0.uppercased() } ) {
             
-            print("index: \(index) value: \(value)")
-            
             XCTAssert(value == values[increment].uppercased(), "test005 failed: Value is '\(value)' Expected '\(values[increment].uppercased())' from the queue.map()" )
             
             increment += 1

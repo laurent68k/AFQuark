@@ -158,8 +158,6 @@ class StackTests: XCTestCase {
         var increment = 0
         for value in stack.map( { $0.uppercased() } ) {
             
-            print("index: \(index) value: \(value)")
-            
             XCTAssert(value == values[decrement].uppercased(), "test005 failed: Value is '\(value)' Expected '\(values[increment].uppercased())' from the statck.amp()" )
             
             decrement -= 1

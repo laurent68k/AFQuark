@@ -1,12 +1,12 @@
 //
 //  Stack.swift
-//  OpenSwiftLib
+//  AFQuark
 //
 //  Created by Laurent on 13/11/2017.
 //  Copyright © 2017 Laurent68k. All rights reserved.
 //
+
 import Foundation
-//import RxSwift
 
 /// ---------------------------------------------------------------------------------------------------------------------------------------------
 /// ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -20,12 +20,12 @@ public enum AFStackError : Error {
 /**
  Stack LIFO data structure
  */
-public class AFStack<Element: Equatable> : Sequence {
+open class AFStack<Element: Equatable> : Sequence {
     
    /**
         Size of the Stack
      */
-    public var size : Int {
+    open var size : Int {
     
         return self.array.count
     }
@@ -33,7 +33,7 @@ public class AFStack<Element: Equatable> : Sequence {
     /**
         Top element on the stack if any
      */
-    public var topItem: Element? {
+    open var topItem: Element? {
 
         return self.array.last
     }
@@ -41,41 +41,31 @@ public class AFStack<Element: Equatable> : Sequence {
     /**
         Bottom element on the stack if any
      */
-    public var bottomItem: Element? {
+    open var bottomItem: Element? {
         
         return self.array.first
     }
  
-    public var isEmpty : Bool {
+    open var isEmpty : Bool {
             
         return self.size == 0 && self.topItem == nil
     }
 
-     /*public struct RxObservables {
-        
-        public var topItem : Variable<Element?> = Variable<Element?>(nil)
-        public var bottomItem : Variable<Element?> = Variable<Element?>(nil)
-        public var size : Variable<Int> = Variable<Int>(0)
-        
-        public var isEmpty : Observable<Bool> {
-            
-            return Observable.zip(self.size.asObservable(), self.topItem.asObservable(), resultSelector: {
-                
-                $0 == 0 && $1 == nil
-            })
-        }
-    }*/
-    
-    //public let rx = RxObservables()
+    public typealias ChangeHandler = ( (Int, Element?, Element?) -> Void)
     /// ---------------------------------------------------------------------------------------------------------------------------------------------
     private (set) var name : String = String.empty
     private var array = [Element]()
+    private var changeHandler: ChangeHandler? = nil
     /// ---------------------------------------------------------------------------------------------------------------------------------------------
-    public init() {
+    public init( changeHandler: ChangeHandler? = nil) {
         
+        self.changeHandler = changeHandler
+        self.changeHandler?(self.array.count, self.array.last, self.array.first)
     }
-    public init(withName name:String) {
+    
+    public convenience init(withName name:String, changeHandler: ChangeHandler? = nil) {
         
+        self.init(changeHandler: changeHandler)
         self.name = name
     }
     /// ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -87,28 +77,24 @@ public class AFStack<Element: Equatable> : Sequence {
     /**
         Push a new object of any type on the stack
      */
-    public func push(_ value:Element) {
+    open func push(_ value:Element) {
         
         self.array.append(value)
         
-//        self.size.value = self.array.count
-//        self.topItem.value = self.array.last
-//        self.bottomItem.value = self.array.first
+        self.changeHandler?(self.array.count, self.array.last, self.array.first)
     }
     /// ---------------------------------------------------------------------------------------------------------------------------------------------
     
     /**
         Pop the last object from the stack. Raise StackError.Empty is stack empty
      */
-    public func pop() throws -> Element {
+    open func pop() throws -> Element {
         
         if self.array.count > 0 {
             
             let element = self.array.removeLast()
 
-//            self.size.value = self.array.count
-//            self.topItem.value = self.array.last
-//            self.bottomItem.value = self.array.first
+            self.changeHandler?(self.array.count, self.array.last, self.array.first)
             
             return element
         }
@@ -119,7 +105,7 @@ public class AFStack<Element: Equatable> : Sequence {
     /**
         Find and return the index of an object in the Stack
      */
-    public func find(indexOf valueToFind: Element) -> Int? {
+    open func find(indexOf valueToFind: Element) -> Int? {
         
         for (index, value) in self.array.enumerated() {
             
@@ -138,7 +124,7 @@ public class AFStack<Element: Equatable> : Sequence {
      
      Called when caller perform a "for in" on the Stack object, or when calling .map()
      */
-    public func makeIterator() -> Array<Element>.Iterator {
+    open func makeIterator() -> Array<Element>.Iterator {
         
         return array.reversed().makeIterator()
     }
@@ -146,7 +132,7 @@ public class AFStack<Element: Equatable> : Sequence {
     /**
      Get a sequence from the head to the tail
      */
-    public func enumerated() -> EnumeratedSequence<[Element]> {
+    open func enumerated() -> EnumeratedSequence<[Element]> {
         
         return array.reversed().enumerated()
         

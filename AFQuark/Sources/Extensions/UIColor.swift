@@ -2,15 +2,18 @@
 //  UIColor.swift
 //  AFQuark
 //
-//  Created by Laurent Favard on 28/03/2019.
-//  Copyright © 2019 Laurent Favard. All rights reserved.
+//  Created by Laurent Favard on 28/03/2018.
+//  Copyright © 2018 Laurent Favard. All rights reserved.
 //
 
 import UIKit
 
 public extension UIColor {
     
-    class func hexStringToUIColor (hex:String) -> UIColor {
+    /**
+     Convert an hexadecimal value to an UIColor
+     */
+    class func fromHexString(_ hex:String ) -> UIColor {
         
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         
