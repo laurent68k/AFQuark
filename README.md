@@ -20,24 +20,33 @@ In the `Podfile` directory (where is your Xcode project), type:
 ```bash
 $ pod install
 ```
+## Classes
 
-## FAAlert Class
+- **FAAlert Class**
 
-`Several way to open and show an alert box or as a sheet.`
+`Several way to open and show an alert box or as a sheet corrcetly with iPhone and iPad.`
 
-## AFCamera Class (iOS only)
+- **AFCamera Class (iOS only)--
 
 `Class to capture an image with the camera`
 
-## AFiCloud Class
+- **AFiCloud Class--
 
 `Class to share documents to iCloud drive`
 
-## AFPdf Class
+- **AFPdf Class**
 
-## AFQueue
+- **AFQueue**
 
-## AFStack
+- **AFStack**
+
+- **AFFiles**
+
+## ViewController
+
+- **AFKeyboardViewController**
+
+`Class to handle the keyboard and NotificationCenter observers.
 
 ## Extensions
 
