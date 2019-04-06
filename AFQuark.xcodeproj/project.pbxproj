@@ -16,6 +16,7 @@
 		4D34D2F4225288FA001D4601 /* AFQuark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3741CC224AB88100FBCD0D /* AFQuark.framework */; };
 		4D34D2FC2252890C001D4601 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2FA2252890C001D4601 /* QueueTests.swift */; };
 		4D34D2FD2252890C001D4601 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2FB2252890C001D4601 /* StackTests.swift */; };
+		4D36B1482258AED6003BB6AF /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36B1472258AED6003BB6AF /* ZoomableScrollView.swift */; };
 		4D3741D1224AB88100FBCD0D /* AFQuark.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3741CF224AB88100FBCD0D /* AFQuark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3741D7224AB91700FBCD0D /* AFALert.swift */; };
 		4D436E532255200F00825648 /* AFQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D436E512255200F00825648 /* AFQueue.swift */; };
@@ -51,6 +52,7 @@
 		4D34D2F3225288FA001D4601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D34D2FA2252890C001D4601 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
 		4D34D2FB2252890C001D4601 /* StackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		4D36B1472258AED6003BB6AF /* ZoomableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
 		4D3741CC224AB88100FBCD0D /* AFQuark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFQuark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3741CF224AB88100FBCD0D /* AFQuark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFQuark.h; sourceTree = "<group>"; };
 		4D3741D0224AB88100FBCD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		4D436E552255201C00825648 /* Cocoa */ = {
 			isa = PBXGroup;
 			children = (
+				4D36B1472258AED6003BB6AF /* ZoomableScrollView.swift */,
 				4D436E562255201C00825648 /* XIBTableViewCell.swift */,
 				4D436E572255201C00825648 /* XIBCollectionViewCell.swift */,
 			);
@@ -317,6 +320,7 @@
 				4D436E5E2255202400825648 /* AFKeyboardViewController.swift in Sources */,
 				4D0FFFE5224D393900384DA1 /* String.swift in Sources */,
 				4D52FFA6224E957700AE738F /* AFCloud.swift in Sources */,
+				4D36B1482258AED6003BB6AF /* ZoomableScrollView.swift in Sources */,
 				4D18C4A22250C3B50054495C /* AFShare.swift in Sources */,
 				4D436E542255200F00825648 /* AFStack.swift in Sources */,
 				4D436E532255200F00825648 /* AFQueue.swift in Sources */,

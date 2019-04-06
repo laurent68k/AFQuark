@@ -54,18 +54,24 @@ open class AFiCloud {
     
     //--------------------------------------------------------------------------------------------------------------
     
-    open func synchronize(fromSource localCloudFolder: URL) {
+    /**
+     Synchronize with the remote iCloud drive app folder the local folder in parameter
+     @return True is success
+     */
+    open func synchronize(fromSourceFolder localCloudFolder: URL, to folder: String) -> Bool {
+        
+        var result = true
         
         //is iCloud working?
         if let iCloudDocumentsURL = self.iCloudDocumentsURL {
             
-            let iCouldDestination = iCloudDocumentsURL.appendingPathComponent( AFiCloud.cloudFolder )
+            let iCouldDestination = iCloudDocumentsURL.appendingPathComponent( AFiCloud.cloudFolder ).appendingPathComponent(folder)
             
             //Create the Directory if it doesn't exist
-            if (!self.fileManager.fileExists(atPath: iCloudDocumentsURL.path, isDirectory: nil)) {
+            if (!self.fileManager.fileExists(atPath: iCouldDestination.path, isDirectory: nil)) {
                 
                 do {
-                    try self.fileManager.createDirectory(at: iCloudDocumentsURL, withIntermediateDirectories: true, attributes:nil)
+                    try self.fileManager.createDirectory(at: iCouldDestination, withIntermediateDirectories: true, attributes:nil)
                 }
                 catch {
                     print(error.localizedDescription)
@@ -84,10 +90,44 @@ open class AFiCloud {
             }
             catch {
                 print(error.localizedDescription)
+                result = false
             }
         }
         else {
             print("iCloud is NOT working or not available yet")
+            result = false
         }
+        
+        return result
+    }
+    
+    /**
+     Return the remote iCloud drive app folder
+     @return URL if available
+     */
+    open func remoteCloudUrl() -> URL? {
+        
+        //is iCloud working?
+        if let iCloudDocumentsURL = self.iCloudDocumentsURL {
+            
+            let fullUrl = iCloudDocumentsURL.appendingPathComponent( AFiCloud.cloudFolder )
+            
+            //Create the Directory if it doesn't exist
+            if (!self.fileManager.fileExists(atPath: fullUrl.path, isDirectory: nil)) {
+                
+                do {
+                    try self.fileManager.createDirectory(at: fullUrl, withIntermediateDirectories: true, attributes:nil)
+                }
+                catch {
+                    print(error.localizedDescription)
+                }
+            }
+            
+            return fullUrl
+        }
+        
+        
+        print("iCloud is NOT working or not available yet")
+        return nil
     }
 }

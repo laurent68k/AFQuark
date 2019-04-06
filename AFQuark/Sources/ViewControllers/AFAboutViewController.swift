@@ -15,7 +15,10 @@ import StoreKit
 open class AFAboutViewController: UIViewController {
     
     //---------------------------------------------------------------------------------------------------------------------------------------------
-    weak var giveOpinionButton: UIButton? {
+    /**
+     Set this property with your Rate App button
+     */
+    public weak var giveOpinionButton: UIButton? {
 
         didSet {
 
@@ -23,7 +26,10 @@ open class AFAboutViewController: UIViewController {
         }
     }
 
-    weak var versionLabel: UILabel? {
+    /**
+     Set this property with your version description label
+     */
+    public weak var versionLabel: UILabel? {
 
         didSet {
 
@@ -52,17 +58,7 @@ open class AFAboutViewController: UIViewController {
         super.viewWillAppear(animated)
     }
         
-    @objc func giveNote() {
-    
-        if #available(iOS 10.3, *) {
-            SKStoreReviewController.requestReview()
-        }
-        else {
-            // Fallback on earlier versions
-        }
-    }
-    
-    //  MARK: - Public Functions    
+    //  MARK: - Public Functions
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         for touch in touches {
@@ -75,4 +71,15 @@ open class AFAboutViewController: UIViewController {
             }
         }
     }
+
+    @objc private func giveNote() {
+        
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        }
+        else {
+            // Fallback on earlier versions
+        }
+    }
+    
 }
