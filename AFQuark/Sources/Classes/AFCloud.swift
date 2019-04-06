@@ -65,24 +65,26 @@ open class AFiCloud {
         //is iCloud working?
         if let iCloudDocumentsURL = self.iCloudDocumentsURL {
             
-            let iCouldDestination = iCloudDocumentsURL.appendingPathComponent( AFiCloud.cloudFolder ).appendingPathComponent(folder)
+            let iCouldBase = iCloudDocumentsURL.appendingPathComponent( AFiCloud.cloudFolder )
+            let iCouldDestination = iCouldBase.appendingPathComponent(folder)
             
             //Create the Directory if it doesn't exist
-            if (!self.fileManager.fileExists(atPath: iCouldDestination.path, isDirectory: nil)) {
+            if (self.fileManager.fileExists(atPath: iCouldBase.path, isDirectory: nil)) {
                 
+                do {
+                    try self.fileManager.removeItem(at: iCouldDestination)
+                }
+                catch {
+                    print(error.localizedDescription)
+                }
+            }
+            else {
                 do {
                     try self.fileManager.createDirectory(at: iCouldDestination, withIntermediateDirectories: true, attributes:nil)
                 }
                 catch {
                     print(error.localizedDescription)
                 }
-            }
-            
-            do {
-                try self.fileManager.removeItem(at: iCouldDestination)
-            }
-            catch {
-                print(error.localizedDescription)
             }
             
             do {

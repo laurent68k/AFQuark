@@ -102,15 +102,12 @@
 		4D18C4A32250CC700054495C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				4D436E5F2255202B00825648 /* AFFiles.swift */,
+				4DDC285A2258EB6D008DD061 /* Classes */,
 				4D436E5A2255202400825648 /* ViewControllers */,
 				4D436E552255201C00825648 /* Cocoa */,
 				4D34D2E6225288C7001D4601 /* DataStructures */,
 				4D0FFFE1224D38BC00384DA1 /* Extensions */,
 				4D4E07E9224C125D0086B5A4 /* Camera */,
-				4D3741D7224AB91700FBCD0D /* AFALert.swift */,
-				4D52FFA4224E957700AE738F /* AFCloud.swift */,
-				4D52FFA3224E957700AE738F /* AFPdf.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -189,6 +186,17 @@
 				4D4E07EA224C12690086B5A4 /* AFCamera.swift */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		4DDC285A2258EB6D008DD061 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D3741D7224AB91700FBCD0D /* AFALert.swift */,
+				4D52FFA4224E957700AE738F /* AFCloud.swift */,
+				4D52FFA3224E957700AE738F /* AFPdf.swift */,
+				4D436E5F2255202B00825648 /* AFFiles.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
