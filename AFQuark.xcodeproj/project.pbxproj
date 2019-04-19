@@ -7,28 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D0FFFE3224D38F700384DA1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE2224D38F700384DA1 /* UIColor.swift */; };
+		4D0FFFE3224D38F700384DA1 /* UIColor+Quark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE2224D38F700384DA1 /* UIColor+Quark.swift */; };
 		4D0FFFE5224D393900384DA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE4224D393900384DA1 /* String.swift */; };
 		4D0FFFE7224D39FF00384DA1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE6224D39FF00384DA1 /* Date.swift */; };
-		4D0FFFE9224D3A2B00384DA1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE8224D3A2B00384DA1 /* UIImage.swift */; };
+		4D0FFFE9224D3A2B00384DA1 /* UIImage+quark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE8224D3A2B00384DA1 /* UIImage+quark.swift */; };
 		4D18C4A22250C3B50054495C /* AFShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18C4A12250C3B50054495C /* AFShare.swift */; };
 		4D34D2F2225288FA001D4601 /* AFQuarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2F1225288FA001D4601 /* AFQuarkTests.swift */; };
 		4D34D2F4225288FA001D4601 /* AFQuark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3741CC224AB88100FBCD0D /* AFQuark.framework */; };
 		4D34D2FC2252890C001D4601 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2FA2252890C001D4601 /* QueueTests.swift */; };
 		4D34D2FD2252890C001D4601 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2FB2252890C001D4601 /* StackTests.swift */; };
-		4D36B1482258AED6003BB6AF /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36B1472258AED6003BB6AF /* ZoomableScrollView.swift */; };
+		4D36B1482258AED6003BB6AF /* AFZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36B1472258AED6003BB6AF /* AFZoomableScrollView.swift */; };
 		4D3741D1224AB88100FBCD0D /* AFQuark.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3741CF224AB88100FBCD0D /* AFQuark.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3741D7224AB91700FBCD0D /* AFALert.swift */; };
 		4D436E532255200F00825648 /* AFQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D436E512255200F00825648 /* AFQueue.swift */; };
 		4D436E542255200F00825648 /* AFStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D436E522255200F00825648 /* AFStack.swift */; };
-		4D436E582255201C00825648 /* XIBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D436E562255201C00825648 /* XIBTableViewCell.swift */; };
-		4D436E592255201C00825648 /* XIBCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D436E572255201C00825648 /* XIBCollectionViewCell.swift */; };
+		4D436E582255201C00825648 /* AFXibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D436E562255201C00825648 /* AFXibTableViewCell.swift */; };
+		4D436E592255201C00825648 /* AFXibCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D436E572255201C00825648 /* AFXibCollectionViewCell.swift */; };
 		4D436E5D2255202400825648 /* AFAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D436E5B2255202400825648 /* AFAboutViewController.swift */; };
 		4D436E5E2255202400825648 /* AFKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D436E5C2255202400825648 /* AFKeyboardViewController.swift */; };
 		4D436E602255202B00825648 /* AFFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D436E5F2255202B00825648 /* AFFiles.swift */; };
 		4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E07EA224C12690086B5A4 /* AFCamera.swift */; };
 		4D52FFA5224E957700AE738F /* AFPdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52FFA3224E957700AE738F /* AFPdf.swift */; };
 		4D52FFA6224E957700AE738F /* AFCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52FFA4224E957700AE738F /* AFCloud.swift */; };
+		4D5464E1226A399E00E13201 /* AFBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5464DF226A399E00E13201 /* AFBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,31 +43,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D0FFFE2224D38F700384DA1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4D0FFFE2224D38F700384DA1 /* UIColor+Quark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Quark.swift"; sourceTree = "<group>"; };
 		4D0FFFE4224D393900384DA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		4D0FFFE6224D39FF00384DA1 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		4D0FFFE8224D3A2B00384DA1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		4D0FFFE8224D3A2B00384DA1 /* UIImage+quark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+quark.swift"; sourceTree = "<group>"; };
 		4D18C4A12250C3B50054495C /* AFShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFShare.swift; sourceTree = "<group>"; };
 		4D34D2EF225288FA001D4601 /* AFQuarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFQuarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D34D2F1225288FA001D4601 /* AFQuarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFQuarkTests.swift; sourceTree = "<group>"; };
 		4D34D2F3225288FA001D4601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D34D2FA2252890C001D4601 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
 		4D34D2FB2252890C001D4601 /* StackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
-		4D36B1472258AED6003BB6AF /* ZoomableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
+		4D36B1472258AED6003BB6AF /* AFZoomableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFZoomableScrollView.swift; sourceTree = "<group>"; };
 		4D3741CC224AB88100FBCD0D /* AFQuark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFQuark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3741CF224AB88100FBCD0D /* AFQuark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFQuark.h; sourceTree = "<group>"; };
 		4D3741D0224AB88100FBCD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3741D7224AB91700FBCD0D /* AFALert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFALert.swift; sourceTree = "<group>"; };
 		4D436E512255200F00825648 /* AFQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFQueue.swift; sourceTree = "<group>"; };
 		4D436E522255200F00825648 /* AFStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFStack.swift; sourceTree = "<group>"; };
-		4D436E562255201C00825648 /* XIBTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XIBTableViewCell.swift; sourceTree = "<group>"; };
-		4D436E572255201C00825648 /* XIBCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XIBCollectionViewCell.swift; sourceTree = "<group>"; };
+		4D436E562255201C00825648 /* AFXibTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFXibTableViewCell.swift; sourceTree = "<group>"; };
+		4D436E572255201C00825648 /* AFXibCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFXibCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D436E5B2255202400825648 /* AFAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFAboutViewController.swift; sourceTree = "<group>"; };
 		4D436E5C2255202400825648 /* AFKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFKeyboardViewController.swift; sourceTree = "<group>"; };
 		4D436E5F2255202B00825648 /* AFFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFFiles.swift; sourceTree = "<group>"; };
 		4D4E07EA224C12690086B5A4 /* AFCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFCamera.swift; sourceTree = "<group>"; };
 		4D52FFA3224E957700AE738F /* AFPdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFPdf.swift; sourceTree = "<group>"; };
 		4D52FFA4224E957700AE738F /* AFCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFCloud.swift; sourceTree = "<group>"; };
+		4D5464DF226A399E00E13201 /* AFBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +93,10 @@
 		4D0FFFE1224D38BC00384DA1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4D0FFFE2224D38F700384DA1 /* UIColor.swift */,
 				4D0FFFE4224D393900384DA1 /* String.swift */,
 				4D0FFFE6224D39FF00384DA1 /* Date.swift */,
-				4D0FFFE8224D3A2B00384DA1 /* UIImage.swift */,
+				4D0FFFE2224D38F700384DA1 /* UIColor+Quark.swift */,
+				4D0FFFE8224D3A2B00384DA1 /* UIImage+quark.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -102,6 +104,7 @@
 		4D18C4A32250CC700054495C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4D5464DF226A399E00E13201 /* AFBase.swift */,
 				4DDC285A2258EB6D008DD061 /* Classes */,
 				4D436E5A2255202400825648 /* ViewControllers */,
 				4D436E552255201C00825648 /* Cocoa */,
@@ -163,9 +166,9 @@
 		4D436E552255201C00825648 /* Cocoa */ = {
 			isa = PBXGroup;
 			children = (
-				4D36B1472258AED6003BB6AF /* ZoomableScrollView.swift */,
-				4D436E562255201C00825648 /* XIBTableViewCell.swift */,
-				4D436E572255201C00825648 /* XIBCollectionViewCell.swift */,
+				4D36B1472258AED6003BB6AF /* AFZoomableScrollView.swift */,
+				4D436E562255201C00825648 /* AFXibTableViewCell.swift */,
+				4D436E572255201C00825648 /* AFXibCollectionViewCell.swift */,
 			);
 			path = Cocoa;
 			sourceTree = "<group>";
@@ -182,7 +185,6 @@
 		4D4E07E9224C125D0086B5A4 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				4D18C4A12250C3B50054495C /* AFShare.swift */,
 				4D4E07EA224C12690086B5A4 /* AFCamera.swift */,
 			);
 			path = Camera;
@@ -193,8 +195,9 @@
 			children = (
 				4D3741D7224AB91700FBCD0D /* AFALert.swift */,
 				4D52FFA4224E957700AE738F /* AFCloud.swift */,
-				4D52FFA3224E957700AE738F /* AFPdf.swift */,
 				4D436E5F2255202B00825648 /* AFFiles.swift */,
+				4D52FFA3224E957700AE738F /* AFPdf.swift */,
+				4D18C4A12250C3B50054495C /* AFShare.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -321,19 +324,20 @@
 				4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */,
 				4D0FFFE7224D39FF00384DA1 /* Date.swift in Sources */,
 				4D436E602255202B00825648 /* AFFiles.swift in Sources */,
-				4D436E592255201C00825648 /* XIBCollectionViewCell.swift in Sources */,
-				4D0FFFE3224D38F700384DA1 /* UIColor.swift in Sources */,
-				4D0FFFE9224D3A2B00384DA1 /* UIImage.swift in Sources */,
+				4D436E592255201C00825648 /* AFXibCollectionViewCell.swift in Sources */,
+				4D0FFFE3224D38F700384DA1 /* UIColor+Quark.swift in Sources */,
+				4D5464E1226A399E00E13201 /* AFBase.swift in Sources */,
+				4D0FFFE9224D3A2B00384DA1 /* UIImage+quark.swift in Sources */,
 				4D52FFA5224E957700AE738F /* AFPdf.swift in Sources */,
 				4D436E5E2255202400825648 /* AFKeyboardViewController.swift in Sources */,
 				4D0FFFE5224D393900384DA1 /* String.swift in Sources */,
 				4D52FFA6224E957700AE738F /* AFCloud.swift in Sources */,
-				4D36B1482258AED6003BB6AF /* ZoomableScrollView.swift in Sources */,
+				4D36B1482258AED6003BB6AF /* AFZoomableScrollView.swift in Sources */,
 				4D18C4A22250C3B50054495C /* AFShare.swift in Sources */,
 				4D436E542255200F00825648 /* AFStack.swift in Sources */,
 				4D436E532255200F00825648 /* AFQueue.swift in Sources */,
 				4D4E07EB224C12690086B5A4 /* AFCamera.swift in Sources */,
-				4D436E582255201C00825648 /* XIBTableViewCell.swift in Sources */,
+				4D436E582255201C00825648 /* AFXibTableViewCell.swift in Sources */,
 				4D436E5D2255202400825648 /* AFAboutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

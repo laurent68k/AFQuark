@@ -8,12 +8,12 @@
 
 import UIKit
 
-public extension UIColor {
+public extension AFBase where Base: UIColor {
     
     /**
      Convert an hexadecimal value to an UIColor
      */
-    class func fromHexString(_ hex:String ) -> UIColor {
+    static func fromHexString(_ hex:String ) -> UIColor {
         
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         
