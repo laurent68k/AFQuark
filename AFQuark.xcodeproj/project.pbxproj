@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4D0FFFE3224D38F700384DA1 /* UIColor+Quark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE2224D38F700384DA1 /* UIColor+Quark.swift */; };
 		4D0FFFE5224D393900384DA1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE4224D393900384DA1 /* String.swift */; };
-		4D0FFFE7224D39FF00384DA1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE6224D39FF00384DA1 /* Date.swift */; };
 		4D0FFFE9224D3A2B00384DA1 /* UIImage+quark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FFFE8224D3A2B00384DA1 /* UIImage+quark.swift */; };
 		4D18C4A22250C3B50054495C /* AFShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D18C4A12250C3B50054495C /* AFShare.swift */; };
 		4D34D2F2225288FA001D4601 /* AFQuarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D34D2F1225288FA001D4601 /* AFQuarkTests.swift */; };
@@ -45,7 +44,6 @@
 /* Begin PBXFileReference section */
 		4D0FFFE2224D38F700384DA1 /* UIColor+Quark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Quark.swift"; sourceTree = "<group>"; };
 		4D0FFFE4224D393900384DA1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		4D0FFFE6224D39FF00384DA1 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		4D0FFFE8224D3A2B00384DA1 /* UIImage+quark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+quark.swift"; sourceTree = "<group>"; };
 		4D18C4A12250C3B50054495C /* AFShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFShare.swift; sourceTree = "<group>"; };
 		4D34D2EF225288FA001D4601 /* AFQuarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFQuarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				4D0FFFE4224D393900384DA1 /* String.swift */,
-				4D0FFFE6224D39FF00384DA1 /* Date.swift */,
 				4D0FFFE2224D38F700384DA1 /* UIColor+Quark.swift */,
 				4D0FFFE8224D3A2B00384DA1 /* UIImage+quark.swift */,
 			);
@@ -322,7 +319,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D3741D9224AB91700FBCD0D /* AFALert.swift in Sources */,
-				4D0FFFE7224D39FF00384DA1 /* Date.swift in Sources */,
 				4D436E602255202B00825648 /* AFFiles.swift in Sources */,
 				4D436E592255201C00825648 /* AFXibCollectionViewCell.swift in Sources */,
 				4D0FFFE3224D38F700384DA1 /* UIColor+Quark.swift in Sources */,
