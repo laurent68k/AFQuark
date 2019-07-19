@@ -102,7 +102,7 @@ open class AFKeyboardViewController: UIViewController, UITextFieldDelegate {
     /**
      Initialize the keyboard with a view to respond ti dismiss keyboard 
      */
-    func initKeyboardObservers(withMovableView keyboardView:UIView) {
+    open func initKeyboardObservers(withMovableView keyboardView:UIView?) {
         
         self.movableKeyboardView = keyboardView
         
