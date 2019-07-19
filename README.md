@@ -1,5 +1,5 @@
 ## Introduction
-AFQuark is my first framework available online as a pod with Cocoapod. The goal is to have some nice to have piece of code to help quickly to develop an iOS App.
+AFQuark is my first framework in development available online as a pod with Cocoapod. The goal is to have some nice to have piece of code to help quickly to develop an iOS App.
 
 Currently in dev, don't use it as a pod. It's my playground zone.
 
@@ -26,11 +26,11 @@ $ pod install
 
 `Several way to open and show an alert box or as a sheet corrcetly with iPhone and iPad.`
 
-- **AFCamera Class (iOS only)--
+- **AFCamera Class (iOS only)**
 
 `Class to capture an image with the camera`
 
-- **AFiCloud Class--
+- **AFiCloud Class**
 
 `Class to share documents to iCloud drive`
 
@@ -49,10 +49,6 @@ $ pod install
 `Class to handle the keyboard and NotificationCenter observers.
 
 ## Extensions
-
-- **Date**
-
-- **String**
 
 - **UIColor**
 
