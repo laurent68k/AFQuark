@@ -143,7 +143,7 @@ open class AFKeyboardViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
-    @objc private func keyboardWillShow(notification: Notification) {
+    @objc open func keyboardWillShow(notification: Notification) {
         
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             
@@ -191,7 +191,7 @@ open class AFKeyboardViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @objc private func keyboardWillHide(notification: Notification) {
+    @objc open func keyboardWillHide(notification: Notification) {
         
         if let keyboardView = self.movableKeyboardView, keyboardView.frame.origin.y != 0 {
             
