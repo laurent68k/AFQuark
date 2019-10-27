@@ -11,7 +11,7 @@ import Foundation
 public extension String {
     
     static let empty = ""
-    static let utcDateTimeFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+    static let utcDateTimeFormat = "yyyy-MM-dd'T'HH:mm:ss:mmmZZZZZ"
     static let utcTimeFormat = "HH:mm:ss:mmmZZZZZ"
     
     /**

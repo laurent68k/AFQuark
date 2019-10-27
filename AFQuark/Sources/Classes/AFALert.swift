@@ -14,11 +14,58 @@ import UIKit
 
 open class AFAlert {
 
+    /**
+    *   create and show a sheet box for iPhone or an alert box for iPad on the screen with a OK/Cancel buttons and an optional handlers
+    */
+    open class func SheetOrAlertOkCancel(_ viewController: UIViewController,
+                                         title: String,
+                                         message: String,
+                                         forButton anchorObject: Any?,
+                                         okHandler: (() -> Void )?,
+                                         cancelHandler: (() -> Void )?) {
+    
+        let iPadDevice = UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad
+        
+        if iPadDevice && anchorObject == nil {
+            
+            AFAlert.AlertOkCancel(viewController,
+                                  title: title,
+                                  message: message,
+                                  okHandler: okHandler,
+                                  cancelHandler: cancelHandler )
+        }
+        else {
+            
+            let okAction = UIAlertAction(title: NSLocalizedString( "OK", comment:""), style: .default, handler: {
+
+                _ in
+                
+                okHandler?()
+            })
+
+            let cancelAction = UIAlertAction(title: NSLocalizedString( "Cancel", comment:""), style: .cancel, handler: {
+
+                _ in
+                
+                cancelHandler?()
+            })
+            
+            AFAlert.alertSheet(viewController,
+                               title: title,
+                               message: message,
+                               forButton: anchorObject,
+                               withActions: [okAction, cancelAction ] )
+        }
+    }
+    
    /**
     *   create and show an alert box on the screen with a OK/Cancel buttons and an optional handlers
     */
-    open class func okCancelAlert(_ viewController: UIViewController, title: String, message: String,
-                                                okHandler: (() -> Void )? = nil, cancelHandler: (() -> Void )? = nil ) {
+    open class func AlertOkCancel(_ viewController: UIViewController,
+                                  title: String,
+                                  message: String,
+                                  okHandler: (() -> Void )?,
+                                  cancelHandler: (() -> Void )? ) {
         
         let okAction = UIAlertAction(title: NSLocalizedString( "OK", comment:""), style: .default, handler: {
 
@@ -41,7 +88,7 @@ open class AFAlert {
    /**
     *   create and show an alert box on the screen with a default OK button and an optional OK handler
     */
-    open class func okAlert(_ viewController: UIViewController, title: String, message: String, completionHandler: (() -> Void)? = nil) {
+    open class func AlertOk(_ viewController: UIViewController, title: String, message: String, completionHandler: (() -> Void)? = nil) {
         
         let action = UIAlertAction(title: NSLocalizedString( "OK", comment:""), style: .default, handler: {
             
@@ -90,7 +137,7 @@ open class AFAlert {
    /**
     *   create and show an alert sheet box on the screen with an anchor UIButton or UIBarButtonItem
     */
-    open class func alertSheet(_ viewController: UIViewController, title: String, message: String, forButton anchorObject: Any, withActions actions: [UIAlertAction]) {
+    open class func alertSheet(_ viewController: UIViewController, title: String, message: String, forButton anchorObject: Any?, withActions actions: [UIAlertAction]) {
 
         let alert = UIAlertController(title: title, message:message, preferredStyle: .actionSheet)
 

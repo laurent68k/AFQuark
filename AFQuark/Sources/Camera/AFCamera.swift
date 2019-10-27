@@ -61,7 +61,7 @@ open class AFCamera {
                         }
                         else {
                             
-                            AFAlert.okAlert( viewController, title:  NSLocalizedString( "Camera", comment:""), message: NSLocalizedString( "The application is not allowed to access the camera. Allow it in the settings.", comment:""))
+                            AFAlert.AlertOk( viewController, title:  NSLocalizedString( "Camera", comment:""), message: NSLocalizedString( "The application is not allowed to access the camera. Allow it in the settings.", comment:""))
                         }
                     }
                 }
@@ -85,7 +85,7 @@ open class AFCamera {
             return imagePicker
         }
 
-        AFAlert.okAlert(viewController, title:  NSLocalizedString( "Camera", comment:""), message: NSLocalizedString("Your device does not have a camera", comment:""))
+        AFAlert.AlertOk(viewController, title:  NSLocalizedString( "Camera", comment:""), message: NSLocalizedString("Your device does not have a camera", comment:""))
         return nil
     }
 }
