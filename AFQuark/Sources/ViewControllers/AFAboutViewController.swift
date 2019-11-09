@@ -61,13 +61,19 @@ open class AFAboutViewController: UIViewController {
     //  MARK: - Public Functions
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        for touch in touches {
-            
-            let locationPoint = touch.location(in: self.view)
-            let subView = self.view.hitTest(locationPoint, with: event)
-            
-            if subView === self.view {
-                self.dismiss(animated: true, completion: nil)
+         //  Si iOS 13 ne rien faire :) On adopte la nouvelle gesture
+        if #available(iOS 13.0, *) {
+        }
+        else {
+            //  Sinon: Toucher la View pour fermer
+            for touch in touches {
+                
+                let locationPoint = touch.location(in: self.view)
+                let subView = self.view.hitTest(locationPoint, with: event)
+                
+                if subView === self.view {
+                    self.dismiss(animated: true, completion: nil)
+                }
             }
         }
     }
